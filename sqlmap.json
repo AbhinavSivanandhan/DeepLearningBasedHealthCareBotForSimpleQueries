@@ -1,0 +1,6 @@
+{
+"medication_module":"Select * from Medication where Duration_in_weeks>3",
+"search_medical_history":"Select * from Medication",
+"search_pharmacy_by_name":"Select Name, POWER((POWER((Latitude-36.3361588500001),2)+POWER((Longitude-119.645667298),2)),0.5) AS Distance from Hospitals order by distance limit 5",
+"search_hospital_by_name":"Select Name from Hospitals order by POWER((POWER((Latitude-36.3361588500001),2)+POWER((Longitude-119.645667298),2)),0.5) limit 5"
+}

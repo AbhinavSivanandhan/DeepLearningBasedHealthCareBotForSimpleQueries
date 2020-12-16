@@ -1,0 +1,58 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?", "Hello", "Hey", "Good day"],
+         "responses": ["Hello", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+	"context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+	"context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?","Who are you?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can guide you through your day and provide you with necessary medical information", "I have a specific set of skills to allow you to access your medical information and help you through your daily routine"],
+	"context": [""]
+        },
+        {"tag": "medication",
+         "patterns": ["How to check my medication?", "Please Open list of medicines or drugs", "Give me a list of medicines or drugs", "Prescribed medicines or drug", "Which medicine to take?" ],
+         "responses": ["Navigating to Medication Module, the current medication you need to take is:"],
+         "context": ["medication_module"]
+        },
+        {"tag": "medical_history",
+         "patterns": ["Show me my medical history","Please Show me medical records","Find medical records","Show me all medication ever used", "Show list of all medicines ever used"],
+         "responses": ["Retrieving entire medical history for Patient"],
+         "context": ["search_medical_history"]
+        },
+        {"tag": "pharmacy_search",
+         "patterns": ["Find me a pharmacy", "Please Find nearest pharmacy", "List of pharmacies nearby", "Please Locate pharmacy", "Search pharmacy" ],
+         "responses": ["Pharmacy names"],
+         "context": ["search_pharmacy_by_name"]
+        },
+	{"tag": "hospital_search",
+         "patterns": ["Please help me Find a hospital", "Find nearest hospital", "List of hospitals nearby", "Locate hospitals", "Please Search hospital" ],
+         "responses": ["Hospital names"],
+         "context": ["search_hospital_by_name"]
+        },
+	{"tag": "assistance_required",
+         "patterns": ["I need some help","You are no use","I don't understand any of this","I need some assistance"],
+         "responses": ["Let us connect you with a support person"],
+         "context": ["dispatch_team"]
+        },
+        {"tag": "emergency",
+         "patterns": ["Emergency","Help me urgently","Help me quickly please","It's an emergency"],
+         "responses": ["Don't worry, help is on the way"],
+         "context": ["emergency"]
+        }
+   ]
+}
