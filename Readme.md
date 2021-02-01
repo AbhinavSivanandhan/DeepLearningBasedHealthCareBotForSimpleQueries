@@ -10,3 +10,4 @@ This was my initial attempt to solve this problem, through a basic DL chatbot, w
 However, this is nowhere close to solving the problem as we imagine it to be. The proposed solution that I would be working in the future is on using GANs ( or Cycle GANs in particular ) to run through previous websites that the user has worked on, to identify the patterns the user might be conventient in and try to help the application emulate such a front-end on its own, as per individual user convenience. If this is beyond scope, atleast a template generated from these sites (and maybe training data invloving Balsamiq/alternative wireframe images as input ), might help designers determine where to place web elements in a webpage.
 
 Note to self: search "ux design using machine learning" in google
+Note 2: Consider NLG based insights offerings to Doctors based on chat summary
